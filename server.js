@@ -4,7 +4,12 @@
 var express = require('express');
 var app = express();
 
-var port = process.env.PORT || 3000;
+
+var config = require('./config.json');
+app.set('PORT, config.webPort');
+console.log(config.webPort)
+var port = process.env.PORT || config.webPort;
+
 
 app.get('/', function(request, response) {
     response.send('Hello Avans!');
