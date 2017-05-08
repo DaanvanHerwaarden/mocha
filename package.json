@@ -2,8 +2,9 @@
   "name": "firstmocha",
   "version": "1.0.0",
   "description": "mocha",
-  "main": "mocha.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node .server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "daan",
@@ -12,5 +13,8 @@
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "mocha": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
   }
 }

@@ -1,1 +1,1 @@
-web: node mocha.js
+web: node server.js
